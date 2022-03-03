@@ -1,14 +1,14 @@
 {
-  "name": "PancakeSwap Top 15",
+  "name": "SincereDogeSwap Top 15",
   "timestamp": "2022-03-01T08:37:57.425Z",
   "version": {
     "major": 2,
     "minor": 17,
     "patch": 2
   },
-  "logoURI": "https://pancakeswap.finance/logo.png",
+  "logoURI": "https://sinceredogeswap.finance/logo.png",
   "keywords": [
-    "pancakeswap",
+    "sinceredogeswap",
     "top 15"
   ],
   "tokens": [
