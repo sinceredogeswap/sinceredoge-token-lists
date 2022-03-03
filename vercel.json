@@ -1,5 +1,5 @@
 {
-  "redirects": [{ "source": "/", "destination": "/pancakeswap-default.json", "permanent": true }],
+  "redirects": [{ "source": "/", "destination": "/sinceredogeswap-default.json", "permanent": true }],
   "headers": [
     {
       "source": "/(.*)",
