@@ -1,14 +1,14 @@
 import fs from "fs";
 import path from "path";
 import { TokenList } from "@uniswap/token-lists";
-import { version as pancakeswapDefaultVersion } from "../lists/pancakeswap-default.json";
-import { version as pancakeswapExtendedVersion } from "../lists/pancakeswap-extended.json";
-import { version as pancakeswapTop15Version } from "../lists/pancakeswap-top-15.json";
-import { version as pancakeswapTop100Version } from "../lists/pancakeswap-top-100.json";
-import pancakeswapDefault from "./tokens/pancakeswap-default.json";
-import pancakeswapExtended from "./tokens/pancakeswap-extended.json";
-import pancakeswapTop100 from "./tokens/pancakeswap-top-100.json";
-import pancakeswapTop15 from "./tokens/pancakeswap-top-15.json";
+import { version as sinceredogeswapDefaultVersion } from "../lists/sinceredogeswap-default.json";
+import { version as sinceredogeswapExtendedVersion } from "../lists/sinceredogeswap-extended.json";
+import { version as sinceredogeswapTop15Version } from "../lists/sinceredogeswap-top-15.json";
+import { version as sinceredogeswapTop100Version } from "../lists/sinceredogeswap-top-100.json";
+import sinceredogeswapDefault from "./tokens/sinceredogeswap-default.json";
+import sinceredogeswapExtended from "./tokens/sinceredogeswap-extended.json";
+import sinceredogeswapTop100 from "./tokens/sinceredogeswap-top-100.json";
+import sinceredogeswapTop15 from "./tokens/sinceredogeswap-top-15.json";
 
 export enum VersionBump {
   "major" = "major",
@@ -23,37 +23,37 @@ type Version = {
 };
 
 const lists = {
-  "pancakeswap-default": {
-    list: pancakeswapDefault,
-    name: "PancakeSwap Default",
-    keywords: ["pancakeswap", "default"],
-    logoURI: "https://pancakeswap.finance/logo.png",
+  "sinceredogeswap-default": {
+    list: sinceredogeswapDefault,
+    name: "SincereDogeSwap Def",
+    keywords: ["sinceredogeswap", "default"],
+    logoURI: "https://sinceredogeswap.finance/logo.png",
     sort: false,
-    currentVersion: pancakeswapDefaultVersion,
+    currentVersion: sinceredogeswapDefaultVersion,
   },
-  "pancakeswap-extended": {
-    list: pancakeswapExtended,
-    name: "PancakeSwap Extended",
-    keywords: ["pancakeswap", "extended"],
-    logoURI: "https://pancakeswap.finance/logo.png",
+  "sinceredogeswap-extended": {
+    list: sinceredogeswapExtended,
+    name: "SincereDogeSwap Ext",
+    keywords: ["sinceredogeswap", "extended"],
+    logoURI: "https://sinceredogeswap.finance/logo.png",
     sort: true,
-    currentVersion: pancakeswapExtendedVersion,
+    currentVersion: sinceredogeswapExtendedVersion,
   },
-  "pancakeswap-top-100": {
-    list: pancakeswapTop100,
-    name: "PancakeSwap Top 100",
-    keywords: ["pancakeswap", "top 100"],
-    logoURI: "https://pancakeswap.finance/logo.png",
+  "sinceredogeswap-top-100": {
+    list: sinceredogeswapTop100,
+    name: "SincereDogeSwap Top",
+    keywords: ["sinceredogeswap", "top 100"],
+    logoURI: "https://sinceredogeswap.finance/logo.png",
     sort: true,
-    currentVersion: pancakeswapTop100Version,
+    currentVersion: sinceredogeswapTop100Version,
   },
-  "pancakeswap-top-15": {
-    list: pancakeswapTop15,
-    name: "PancakeSwap Top 15",
-    keywords: ["pancakeswap", "top 15"],
-    logoURI: "https://pancakeswap.finance/logo.png",
+  "sinceredogeswap-top-15": {
+    list: sinceredogeswapTop15,
+    name: "SincereDogeSwap Top",
+    keywords: ["sinceredogeswap", "top 15"],
+    logoURI: "https://sinceredogeswap.finance/logo.png",
     sort: true,
-    currentVersion: pancakeswapTop15Version,
+    currentVersion: sinceredogeswapTop15Version,
   },
 };
 
