@@ -59,7 +59,7 @@ const getDateRange = (): string[] => {
 };
 
 /**
- * Fetch Top100 Tokens traded on PancakeSwap v2, ordered by trading volume,
+ * Fetch Top100 Tokens traded on SincereDogeSwap, ordered by trading volume,
  * for the past 30 days, filtered to remove default / broken tokens.
  *
  * @returns BitqueryEntity[]]
@@ -112,7 +112,7 @@ const getTokens = async (): Promise<BitqueryEntity[]> => {
 const getTokenLogo = (address: string): string => {
   // Note: fs.existsSync can't be used here because its not case sensetive
   if (logoFiles.includes(`${address}.png`)) {
-    return `https://tokens.pancakeswap.finance/images/${address}.png`;
+    return `https://tokens.sinceredogeswap.finance/images/${address}.png`;
   }
 
   return `https://assets.trustwalletapp.com/blockchains/smartchain/assets/${address}/logo.png`;
@@ -146,7 +146,7 @@ const main = async (): Promise<void> => {
       return [...list, updatedToken];
     }, []);
 
-    const tokenListPath = `${path.resolve()}/src/tokens/pancakeswap-top-100.json`;
+    const tokenListPath = `${path.resolve()}/src/tokens/sinceredogeswap-top-100.json`;
     console.info("Saving updated list to ", tokenListPath);
     const stringifiedList = JSON.stringify(sanitizedTokens, null, 2);
     fs.writeFileSync(tokenListPath, stringifiedList);
